@@ -1,0 +1,27 @@
+A3 Algorithm
+
+Goal: Simulate horse race where there are an x>=2 amt of horses with y>=2 length of track (determined by user). Race progress should be random for each horse and a snapshot of each round for track length should be presented. Winner should be stated at end of each race. 
+Must use dynamic arrays, clear array data, contain two classes, uses makefile
+Input: horses and track length >=2 from user
+Output: prompt to input horse quantity, prompt to input track length, if less than two for either show error and try again. “race begins” then 1 snapshot for each race segment, then winner horse
+Steps: 
+create UML to get idea of objects
+create main.cpp, header for horse, cpp for horse, header for track, cpp for track, makefile
+in headers add inclusions for ifndef and define and end with endif
+in horse header add horse class
+	method horse position
+in horse cpp add horse position code
+	random function if >0 move otherwise stay
+in track header add track class
+	method dynamic matrix
+in track cpp add track matrix code
+main cpp
+	input request for horse and track with min of 2
+	create horse for indicated amount loop
+	create matrix with track input info
+	output place loop until horse moves to last area
+	announce winner at end of loop
+	delete memory
+
+
+

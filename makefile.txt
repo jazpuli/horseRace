@@ -1,0 +1,14 @@
+all: horse.hpp horse.cpp track.hpp track.cpp main.cpp
+	g++ -c horse.cpp
+	g++ -c track.cpp
+	g++ -c main.cpp
+	g++ horse.o track.o main.o -o exec
+
+run: all
+	./exec
+
+clean:
+	rm exec
+	rm *.o
+valgrind:
+	    valgrind --leak-check=yes ./exec
